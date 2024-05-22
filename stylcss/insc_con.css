@@ -1,0 +1,110 @@
+/**** css de la page d'inscription et de connexion****/
+
+/***inscription***/
+
+.inscription{
+   /* padding-top: 40%;*/
+    width: 100%;
+    
+    margin-bottom: 6%;
+    height: 100%;
+  
+    align-items: center;
+    justify-content: center;
+}
+.inscription h1{
+
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+}
+.container{
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+#div_separator{
+    width: 100%;
+}
+#div_separator{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#div_separator input{
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+}
+#div_separator textarea{
+    width: 70%;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 15%;
+}
+
+#div_separator label{
+    margin-left:0;
+    text-align: left;
+    font-style: italic;
+    font-size: large;font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 46%;
+
+} 
+#div_button_ins {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+#div_button_ins div  {
+    display: inline;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_button_ins div button {
+    display: inline-flex;
+    flex-direction: row;
+    width: 50;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+#div_button_ins div a{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70;
+    color: white;
+
+}
+#div_button_ins div a:hover{
+    color: rgb(66, 66, 214);
+}
+
+#connexionh1{
+    margin-bottom: 3%;
+}
+#erreur_succes{
+   text-align: center;
+   justify-content: center;
+}
+
+
+
+
+

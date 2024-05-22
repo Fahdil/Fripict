@@ -1,0 +1,28 @@
+#remove extention from url ex: index.php to index
+RewriteEngine On
+
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
+
+#pages simple
+RewriteRule ^home$ index.php [L]
+
+RewriteRule ^Contact$ me_contacter.php [L]
+
+#pages categorie simple 
+RewriteRule ^home-recover-([0-9]+)$ recover/fom_forget.php?mail_sent=$1 [L]
+
+#pages categorie simple 
+RewriteRule ^home-search-([a-z]+)$ index.php?search=$1 [L]
+
+#pages categorie page et recherche  
+RewriteRule ^home-([a-z]+)-([a-z]+)-([0-9]+)$ index.php?page=$3&categorieviser=$1&search=$2 [L]
+
+#pages qui n'existent pas
+#ErrorDocument 404 /pages/connexion.php
+

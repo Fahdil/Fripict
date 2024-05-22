@@ -1,0 +1,97 @@
+.first_line{
+    margin-top: 5%;
+    padding-top: 2%;
+    width: 50%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+
+.boooksection{
+    margin-top: 3%;
+    width: 100%;
+    height: 20%;
+    padding: 0% 4%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.boooksection img{
+    width: 19%;
+    height: 100%;
+}
+.boooksection div{
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    text-align: left;
+    margin-left: 3%;
+    width: 30%;
+}
+.boooksection div h3{
+    text-decoration: none;
+    color: rgb(228, 22, 22);
+    text-align: center;
+}
+.boooksection div p a{
+    text-decoration: none;
+}
+.last_shop{
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .first_line{
+    margin-top: 8%;
+    padding-top: 2%;
+    width: 90%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+
+.boooksection{
+    margin-top: 3%;
+    width: 100%;
+    height: 20%;
+    padding: 0% 4%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.boooksection img{
+    width: 33%;
+    height: 100%;
+}
+.boooksection div{
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    text-align: left;
+    margin-left: 3%;
+    width: 48%;
+}
+.boooksection div h3{
+    text-decoration: none;
+    color: rgb(228, 22, 22);
+    text-align: center;
+}
+.boooksection div p a{
+    text-decoration: none;
+}
+.last_shop{
+    text-align: center;
+}
+
+}

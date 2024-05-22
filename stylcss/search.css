@@ -1,0 +1,527 @@
+/** id div_test_responsivite**/
+#div_test_responsivite{
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+   /* margin-top: 4%;*/
+    width:100%;
+    flex: auto;
+}
+#div_test_responsivite div{
+    display: flexbox;
+}
+
+/*********search**********/
+#search-container{
+    width: 100%;
+}
+#searchform{
+    
+    width: 100%;
+    flex-direction: row;
+   
+    margin-bottom: 1%;
+   
+    background-image: url("images/bacground.jpg");
+    background-attachment: fixed;
+    z-index: 1000;
+    align-items: center; 
+    text-align: center;
+    justify-content: center;
+
+}
+#searchform input{
+    width: 60%;
+
+
+}
+#searchform button{
+    width: 10%;
+    border-radius: 5px;
+    background-color: aqua;
+    color: white;
+    font-size: small;
+    font-style: italic;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+/***naveprod***/
+#change_color{
+    background-color: white;
+    color: white;
+    opacity: 0.2;
+}
+#navprodall_nav{
+    background-color: none;
+    flex-direction: row;
+    margin-top:25px;
+ 
+    width: 100%;
+    z-index: 1000;/* Assurez-vous que la barre de navigation est au-dessus du contenu */
+   }
+   #navprodfilter{
+       color: red;
+       font-style: italic;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: bold;
+   
+   }
+   #navprodelement{
+       margin-left: 5px;
+       color: white;
+       box-sizing: border-box;
+       background-color: black;
+       border-radius:8px ;
+       transition: all 0.2s;
+       height: 30px;
+       padding-top: 0;
+       font-weight: bolder;
+       text-align: center;
+       justify-content: center;
+   }
+   #navprodelement :hover{
+       cursor: pointer;
+       opacity: .8;
+   }
+   #navbarNav{
+       margin-left: 2%;
+       overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
+       white-space: nowrap; /* Empêche le retour à la ligne des éléments */
+   }
+
+/** navindex.php **/
+.nav_div{
+    z-index: 1000;
+}
+#nav_principal{
+   
+    width: 100%;
+    height: 25px;
+    margin-top: 0;
+    z-index: 1000;/* Assurez-vous que la barre de navigation est au-dessus du contenu */
+}
+#nav_principal nav{
+    width: 100%;
+}
+
+
+ /*partie propre a index.php celui dans index.css corespond a une autre page*/ 
+
+ #features_section_show_product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 180px;
+    
+    text-align: center;
+    justify-content: center;
+  }
+  #features_section_show_product form{  
+    margin-top: 2%;
+    margin-left: 0.8%;
+    text-align: center;
+    justify-content: center;
+}
+  #features_section_show_product form div{   
+    margin-top: 2%;
+    width: 200px;
+    height: 280px;
+   /* width: 30%;
+    height: 18%;*/
+    text-align: center;
+    justify-content: center;
+  
+}
+#features_section_show_product form div p{
+    display: inline;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(149, 231, 231);
+    border: solid;
+    border-radius: 8px;
+}
+#features_section_show_product form div h5{
+    display: block;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+  #features_section_show_product form div img {
+   /* width: 100%;
+    height: 80%;*/
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+    
+  }
+
+  #features_section_show_product form div button {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 0.5%;
+    
+  }
+/*******affichage pour les petites résolutions ***************/
+@media screen and (max-width: 450px) {
+
+    #features_section_show_product form{  
+        margin-top: 3%;
+        margin-left: 2%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    #features_section_show_product form div{   
+        margin-top: 2%;
+        width: 150px;
+        height: 240px;
+       /* width: 30%;
+        height: 18%;*/
+        text-align: center;
+        justify-content: center;
+      
+    }
+    
+    
+      #features_section_show_product form div img {
+       /* width: 100%;
+        height: 80%;*/
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        
+      }
+
+      #searchform button{
+        width: 20%;
+        border-radius: 5px;
+        background-color: aqua;
+        color: white;
+        font-size: small;
+        font-style: italic;
+        font-weight: bold;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}   
+
+
+
+
+
+  
+.pagination{
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.pagination a{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border: inset;
+    width: 36px;
+    height: 36px;
+    text-decoration: none;
+}
+.pagination a:active{
+    background-color: blueviolet;
+    color: #000;
+}
+
+/*
+.pagination span{
+font-weight: bolder;
+font-style: oblique;
+color: white;
+margin-left: 2px;
+margin-right: 2px;
+text-align: center;
+justify-content: center;
+}
+.pagination button{
+    font-style: italic;
+    color: red;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    }**/
+
+    /**css pour tous les liens**/
+
+    a{
+        cursor: pointer;
+    }
+ /*** PRICING ***/
+ #pricing{
+    width: 100%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+ }
+ #pricing h1{
+   color: red;
+   text-align: center;
+   justify-content: center;
+   margin-bottom: 2%;
+   font-weight: bolder;
+ }
+ #pricing h4{
+    color: red;
+    text-align: center;
+    justify-content: center;
+  }
+  #pricing p{
+    color: white;
+    text-align: left;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    width: 40%;
+    margin-bottom: 2%;
+    
+  }
+ 
+
+
+
+
+
+
+  /*****
+  #searchform{
+    margin-top: 9%;
+    width: 100%;
+    flex-direction: row;
+    position: fixed;
+    margin-bottom: 1%;
+   
+    background-image: url("images/bacground.jpg");
+    background-attachment: fixed;
+
+}
+#searchform input{
+    width: 60%;
+    margin-left: 16%;
+
+}
+#searchform button{
+    width: 6%;
+    border-radius: 5px;
+    background-color: aqua;
+    color: white;
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+/***naveprod***
+#navprodall_nav{
+    background-color: none;
+    flex-direction: row;
+    margin-top: 4%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Assurez-vous que la barre de navigation est au-dessus du contenu *
+   }
+   #navprodfilter{
+       color: red;
+       font-style: italic;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: bold;
+   
+   }
+   #navprodelement{
+       margin-left: 5px;
+       color: white;
+       box-sizing: border-box;
+       background-color: black;
+       border-radius:8px ;
+       transition: all 0.2s;
+       height: 30px;
+       padding-top: 0;
+       font-weight: bolder;
+       text-align: center;
+       justify-content: center;
+   }
+   #navprodelement :hover{
+       cursor: pointer;
+       opacity: .8;
+   }
+   #navbarNav{
+       margin-left: 2%;
+       overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire *
+       white-space: nowrap; /* Empêche le retour à la ligne des éléments *
+   }
+
+/** nav.php **
+#nav_principal{
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    margin-top: 0;
+    z-index: 1000; /* Assurez-vous que la barre de navigation est au-dessus du contenu 
+}
+#nav_principal nav{
+    width: 100%;
+}
+
+
+ /*partie propre a features*
+
+ #features_section_show_product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 13%;
+    padding-left: 3%;
+  }
+  #features_section_show_product form{  
+    margin-top: 2%;
+    margin-left: 1%;
+}
+  #features_section_show_product form div{   
+    margin-top: 2%;
+    width: 200px;
+    height: 280px;
+}
+#features_section_show_product form div p{
+    display: inline;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(149, 231, 231);
+    border: solid;
+    border-radius: 8px;
+}
+#features_section_show_product form div h5{
+    display: block;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+  #features_section_show_product form div img {
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+    
+  }
+
+  #features_section_show_product form div button {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    
+  }
+
+.pagination{
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+.pagination a{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border: inset;
+    width: 36px;
+    height: 36px;
+    text-decoration: none;
+}
+.pagination a:active{
+    background-color: blueviolet;
+    color: #000;
+}
+
+/*
+.pagination span{
+font-weight: bolder;
+font-style: oblique;
+color: white;
+margin-left: 2px;
+margin-right: 2px;
+text-align: center;
+justify-content: center;
+}
+.pagination button{
+    font-style: italic;
+    color: red;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    }**/
+
+    /**css pour tous les liens**
+
+    a{
+        cursor: pointer;
+    }
+ /*** PRICING ***
+ #pricing{
+    width: 100%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+ }
+ #pricing h1{
+   color: red;
+   text-align: center;
+   justify-content: center;
+   margin-bottom: 2%;
+   font-weight: bolder;
+ }
+ #pricing h4{
+    color: red;
+    text-align: center;
+    justify-content: center;
+  }
+  #pricing p{
+    color: white;
+    text-align: left;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    width: 40%;
+    margin-bottom: 2%;
+    
+  }*********************************************************************/
+ 

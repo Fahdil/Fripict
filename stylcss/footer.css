@@ -1,0 +1,241 @@
+footer 
+{
+    background-color: black;
+    background: linear-gradient(to bottom, #9b9a9a,#4b4a4a , #050505);
+    position: relative bottom;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+    height:100px;
+   /* z-index: 1000;*/
+}  
+
+#footer_div_containeur{
+    width: 100%;
+}
+.footer_div_1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    color: #fff;
+    width:100%;
+}
+.footer_div_1 p{
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 1.5px;
+    font-weight: bold;
+    color: #fff;
+}
+.footer_div_2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+ }
+.footer_div_2 ul {
+    text-decoration: none;
+ }
+       
+        .footer_div_2_li_milieu i{
+           font-weight: 400;
+           color: linear-gradient(to Top,#7dc3cc , #13b3e9) 
+        }
+
+
+
+.footer_div_3{
+    text-decoration: none;
+   }
+   .footer_div_3 ul li{
+    text-decoration: none;
+    flex: 1;
+    display: inline-flex;
+    }
+ 
+
+
+
+
+    footer:hover 
+    {  
+        background: linear-gradient(to Top, #9b9a9a,#4b4a4a , #050505)
+        
+    }
+    .footer_div_1 p a:hover{
+        color: white;
+    }
+    .footer_div_1 p a:visited{
+        color: white;
+    }
+    .footer_div_1 p a:visited:hover{
+        color: white;
+    }
+
+
+/* Animation oiseaux footer*/
+   /* Animation oiseaux footer */
+.footer_div_3_bird_gauchea {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    animation: bird-fly 5s linear infinite;
+}
+
+@keyframes bird-fly {
+    0% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(25%) translateY(-50%); }
+    50% { transform: translateX(50%) translateY(-100%); }
+    75% { transform: translateX(75%) translateY(-50%); }
+    100% { transform: translateX(100%) translateY(0); }
+}
+
+.footer_div_3_bird_droita {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    animation: bird-fly-inverse 5s linear infinite;
+}
+
+@keyframes bird-fly-inverse {
+    0% { transform: translateX(100%) translateY(0); }
+    25% { transform: translateX(75%) translateY(-50%); }
+    50% { transform: translateX(50%) translateY(-100%); }
+    75% { transform: translateX(25%) translateY(-50%); }
+    100% { transform: translateX(0) translateY(0); }
+}
+
+.footer_div_3_bird_gaucheb {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    animation: bird-fly 5s linear infinite;
+}
+
+.footer_div_3_bird_droitb {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    animation: bird-fly-inverse 5s linear infinite;
+}
+
+
+
+
+
+/* Règles CSS pour les écrans petit 
+@media screen and (max-width: 450px) {
+    
+    .footer_div_3_bird_gauchea {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        animation: none;
+    }
+    
+    
+    .footer_div_3_bird_droita {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        animation: none;
+    }   
+    
+    .footer_div_3_bird_gaucheb {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: 50%;
+        animation: none;
+    }
+    
+    .footer_div_3_bird_droitb {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: 50%;
+        animation: none;
+    }
+    
+
+
+}*/
+
+      
+      /* Animation oiseaux footer
+    .footer_div_3_bird_gauchea {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        position: absolute;
+        animation: bird-fly 5s linear infinite;
+        
+    }
+            @keyframes bird-fly {
+                0% { transform: translateX(0) translateY(0); }
+                50% { transform: translateX(100px) translateY(-50px); }
+                100% { transform: translateX(200px) translateY(0); }
+            }
+    .footer_div_3_bird_droita {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        position: absolute;
+        animation: bird-fly-inverse 5s linear infinite;
+        
+    }
+    @keyframes bird-fly-inverse {
+        //Définit les étapes clés de l'animation 
+        0% { transform: translateX(200px) translateY(0); }
+        // À 0% de l'animation, les oiseaux sont à la position de départ 
+        
+        50% { transform: translateX(100px) translateY(-50px); }
+        // À 50% de l'animation, les oiseaux se déplacent vers le haut 
+        
+        100% { transform: translateX(0) translateY(0); }
+        //À 100% de l'animation, les oiseaux reviennent à la position de départ 
+      }
+  
+      .footer_div_3_bird_gaucheb {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: 50%;
+        position: absolute;
+        animation: bird-fly 5s linear infinite;
+        
+    }
+            @keyframes bird-fly {
+                0% { transform: translateX(0) translateY(0); }
+                50% { transform: translateX(100px) translateY(-50px); }
+                100% { transform: translateX(200px) translateY(0); }
+            }
+    .footer_div_3_bird_droitb {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: 50%;
+        position: absolute;
+        animation: bird-fly-inverse 5s linear infinite;
+        
+    }
+    @keyframes bird-fly-inverse {
+        // Définit les étapes clés de l'animation 
+        0% { transform: translateX(200px) translateY(0); }
+        // À 0% de l'animation, les oiseaux sont à la position de départ 
+        
+        50% { transform: translateX(100px) translateY(-50px); }
+        //À 50% de l'animation, les oiseaux se déplacent vers le haut 
+        
+        100% { transform: translateX(0) translateY(0); }
+        // À 100% de l'animation, les oiseaux reviennent à la position de départ 
+      }*/

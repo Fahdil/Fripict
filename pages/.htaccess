@@ -1,0 +1,59 @@
+#remove extention from url ex: index.php to index
+
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+
+
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
+
+# Article sans numéro de page :
+#RewriteRule ^article-([0-9]+)-([0-9]+).html$   /articles/article.php?id=$1&rubrique=$2 [L]
+
+# Article avec numéro de page :
+
+#RewriteRule ^index/([0-9]+)/([a-z]+)/([a-z]+)$ /betapict/index.php?page=$1&categorieviser=$2&search=$3 [L]
+
+#RewriteRule ^index.php?page=([^/]+)&categorieviser=([^/]+)&search=([^/]+)$ /betapict/index/$1/$2/$3 [L]
+
+#base de recriture 
+#RewriteBase /betapict/
+
+#pages simple
+RewriteRule ^index$ /pages/index.php [L] 
+
+RewriteRule ^me_contacter$ /pages/me_contacter.php [L] 
+
+RewriteRule ^connexion$ /pages/connexion.php [L] 
+
+#pages categorie simple 
+RewriteRule ^index-categorieviser-([a-z]+)$ /pages/index.php?categorieviser=$1 [L]
+
+#pages categorie simple
+#RewriteRule ^index-search-([a-z]+)$ /pages/index.php?search=$1 [L] 
+
+#pages categorie page et recherche  
+RewriteRule ^index-view-([a-z]+)-([a-z]+)-([0-9]+)$ /pages/index.php?page=$3&categorieviser=$1&search=$2 [L] 
+
+#pages categorie et recherche  
+RewriteRule ^index-view-([a-z]+)-([a-z]+)$ /pages/index.php?page=1&categorieviser=$1&search=$2 [L] 
+
+#pages categorie et pages  
+RewriteRule ^index-view-([a-z]+)-([0-9]+)$ /pages/index.php?page=$2&categorieviser=$1&search=all [L] 
+
+#pages search et pages  
+RewriteRule ^index-view-([a-z]+)-([0-9]+)$ /pages/index.php?page=$2&categorieviser=all&search=$1 [L] 
+
+#pages qui n'existent pas 
+ErrorDocument 404 /pages/index.php?page=1&categorieviser=all&search=all
+
+
+

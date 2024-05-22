@@ -1,0 +1,13 @@
+#nav_nav_id{
+    color: #fff;
+    position: fixed;
+    width: 100%;
+}
+#quiter ul li a{
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+#nav_div{
+    width: 100%;  
+} 
